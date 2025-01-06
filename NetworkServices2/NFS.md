@@ -163,6 +163,7 @@ Which port contains the service we\'re looking to enumerate?
 2049\
 Now, use /usr/sbin/showmount -e \[IP\] to list the NFS shares, what is
 the name of the visible share?
+![alt text](https://github.com/K4R7H1K-D/TryHackMe/blob/main/NetworkServices2/2.png)
 
 /home\
 Time to mount the share to our local machine!
@@ -170,6 +171,7 @@ Time to mount the share to our local machine!
 First, use \"*mkdir /tmp/mount*\" to create a directory on your machine
 to mount the share to. This is in the /tmp directory- so be aware that
 it will be removed on restart.
+![alt text](https://github.com/K4R7H1K-D/TryHackMe/blob/main/NetworkServices2/3.png)
 
 Then, use the mount command we broke down earlier to mount the NFS share
 to your local machine. Change directory to where you mounted the share-
@@ -185,7 +187,10 @@ folders. Which of these folde**rs** could cont**a**in keys that would
 give us remote access to the server?
 
 .ssh\
+
 Which of these keys is most useful to us?
+![alt text](https://github.com/K4R7H1K-D/TryHackMe/blob/main/NetworkServices2/4.png)
+![alt text](https://github.com/K4R7H1K-D/TryHackMe/blob/main/NetworkServices2/5.png)
 
 id_rsa\
 Copy this file to a different location your local machine, and change
@@ -266,6 +271,7 @@ Answer the questions below\
 First, change directory to the mount point on your machine, where the
 NFS share should still be mounted, and then into the user\'s home
 directory.
+![alt text](https://github.com/K4R7H1K-D/TryHackMe/blob/main/NetworkServices2/6.png)
 
 No answer needed\
 Download the bash executable to your Downloads directory. Then use \"cp\
@@ -286,6 +292,7 @@ Now, SSH into the machine as the user. List the directory to make sure
 the bash executable is there. Now, the moment of truth. Lets run it with
 \"*./bash -p*\". The -p persists the permissions, so that it can run as
 root with SUID- as otherwise bash will sometimes drop the permissions.
+![alt text](https://github.com/K4R7H1K-D/TryHackMe/blob/main/NetworkServices2/7.png)
 
 no Answer need\
 Great! If all\'s gone well you should have a shell as root! What\'s the
