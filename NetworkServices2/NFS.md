@@ -155,6 +155,7 @@ Now we understand our tools, let\'s get started!
 Answer the questions below\
 Conduct a thorough port scan scan of your choosing, how many ports are
 open?
+![alt text](https://github.com/K4R7H1K-D/TryHackMe/blob/main/NetworkServices2/1.png)
 
 7\
 Which port contains the service we\'re looking to enumerate?
